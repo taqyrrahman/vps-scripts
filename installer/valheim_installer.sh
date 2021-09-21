@@ -9,7 +9,6 @@ sudo echo steam steam/license note '' | sudo debconf-set-selections
 sudo echo steam steam/question select 'I AGREE' | sudo debconf-set-selections
 #'
 sudo apt install lib32gcc1 steamcmd -y
-exit
 mkdir /home/qittu/valheim
 steamcmd +login anonymous +force_install_dir /home/qittu/valheim +app_update 896660 validate +exit
 cp /home/qittu/vps-scripts/start_valheim.sh /home/qittu/valheim/start_valheim.sh
