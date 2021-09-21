@@ -12,3 +12,5 @@ sudo apt install lib32gcc1 steamcmd -y
 exit
 mkdir /home/qittu/valheim
 steamcmd +login anonymous +force_install_dir /home/qittu/valheim +app_update 896660 validate +exit
+cp /home/qittu/vps-scripts/start_valheim.sh /home/qittu/valheim/start_valheim.sh
+chmod +x /home/qittu/valheim/start_valheim.sh

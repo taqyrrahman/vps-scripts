@@ -9,7 +9,7 @@ Type=simple
 Restart=always
 RestartSec=5
 WorkingDirectory=/home/qittu/valheim
-ExecStart=/home/qittu/valheim/valheim_runner.sh
+ExecStart=/home/qittu/valheim/start_valheim.sh
 
 [Install]
 WantedBy=multi-user.target
