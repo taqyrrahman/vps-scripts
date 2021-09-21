@@ -1,0 +1,15 @@
+[Unit]
+Description=Valheim custom service
+After=network.target
+After=systemd-user-sessions.service
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+WorkingDirectory=/home/qittu/valheim
+ExecStart=/home/qittu/valheim/valheim_runner.sh
+
+[Install]
+WantedBy=multi-user.target
